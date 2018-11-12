@@ -348,6 +348,104 @@ input[type="submit"] {
 /* -------------------- MODULES */
 
 
+@media screen and (min-width: 800px) {
+  .hero-module {
+    position: relative;
+  }
+
+  .hero-module img {
+    width: 100%;
+  }
+
+  .hero-content {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .heading-main {
+    color: var(--alternative-text-color);
+    text-shadow: 0px 1px 10px var(--strong-text-color);
+  }
+}
+
+/* grids*/
+
+@media screen and (min-width: 800px) {
+  .content-area-grid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+  }
+}
+
+/* image gallery */
+
+.image-gallery ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.image-gallery li {
+  float: left;
+  max-width: 250px;
+  margin: 10px;
+}
+
+.image-gallery a img {
+  filter: grayscale(70%);
+  transition: var(--transition-time);
+  box-shadow: 0px 1px 10px var(--strong-text-color);
+}
+
+.image-gallery a:hover img {
+  transform: scale(1.1);
+  filter: unset;
+}
+
+/* animations */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  animation-name: fadein;
+
+  animation-duration: var(--transition-time)
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+.logo-wrapper a:hover img {
+    animation-name: spin;
+    animation-duration: 1s;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
+}
 
 
 

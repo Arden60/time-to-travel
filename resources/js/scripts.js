@@ -50,6 +50,8 @@ function activeMenu() {
 
 }
 
+// now run the function
+
 activeMenu();
 
 
