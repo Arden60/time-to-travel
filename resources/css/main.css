@@ -366,7 +366,7 @@ input[type="submit"] {
     bottom: 0;
 
     display: flex;
-    align-items: center;
+    align-items: center; 
   }
 
   .heading-main {
